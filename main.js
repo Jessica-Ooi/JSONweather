@@ -70,7 +70,7 @@ weatherForecast.onload = function() {
         date_raw = date_raw.substring(5,11);
         document.getElementById('r3c1').innerHTML= date_raw;
     
-        var iconcode = fObj.list[12].weather[0].icon;
+        var iconcode = fObj.list[16].weather[0].icon;
         var icon_path = "//openweathermap.org/img/w/"+iconcode+".png";
         document.getElementById('r3c2').src = icon_path;
         document.getElementById('r3c3').innerHTML = fObj.list[16].main.temp_min+"&deg;";
