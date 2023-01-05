@@ -74,17 +74,6 @@ weatherForecast.onload = function() {
         var icon_path = "//openweathermap.org/img/w/"+iconcode+".png";
         document.getElementById('r3c2').src = icon_path;
         document.getElementById('r3c3').innerHTML = fObj.list[16].main.temp_min+"&deg;";
-        document.getElementById('r3c4').innerHTML = fObj.list[16].main.temp_max+"&deg;";
-    
-        // Row 4 
-        var date_raw = fObj.list[24].dt_txt;
-        date_raw = date_raw.substring(5,11);
-        document.getElementById('r4c1').innerHTML= date_raw;
-    
-        var iconcode = fObj.list[24].weather[0].icon;
-        var icon_path = "//openweathermap.org/img/w/"+iconcode+".png";
-        document.getElementById('r4c2').src = icon_path;
-        document.getElementById('r4c3').innerHTML = fObj.list[24].main.temp_min+"&deg;";
-        document.getElementById('r4c4').innerHTML = fObj.list[24].main.temp_max+"&deg;";
+        document.getElementById('r3c4').innerHTML = fObj.list[16].main.temp_max+"&deg;";      
     }
 }
